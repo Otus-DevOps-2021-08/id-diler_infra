@@ -1,6 +1,14 @@
 # id-diler_infra
 
-## HW-3
+## 4. Практика управления ресурсамиyandex cloud через YC.
+
+testapp_IP = 35.198.167.169
+
+testapp_port = 9292
+
+
+
+## 3. Запуск VM в Yandex Cloud, управление правилами фаервола, настройка SSH подключения, настройка SSH подключения через Bastion Host, настройка VPN сервера и VPN-подключения.
 
 ### Самостоятельное задание
 > ssh -i ~/.ssh/yc-otus-appuser -A yc-otus-appuser@62.84.119.155 -t ssh 10.128.0.16

@@ -4,10 +4,10 @@
 
 ### Самостоятельное задание
 > ssh -i ~/.ssh/yc-otus-appuser -A yc-otus-appuser@62.84.119.155 -t ssh 10.128.0.16
->
-> bastion_IP = 62.84.119.155
->
-> someinternalhost_IP = 10.128.0.16
+
+bastion_IP = 62.84.119.155
+
+someinternalhost_IP = 10.128.0.16
 
 ### Дополнительное задание
 > в "~/.ssh/config" прописываем

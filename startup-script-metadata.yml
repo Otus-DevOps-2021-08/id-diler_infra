@@ -7,9 +7,11 @@ users:
     ssh-authorized-keys:
       - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDrQgEgMAaMWmelnKF8A2sImFYzNozjgRTyyujpwWhBJxwUXBq5fjKxUgYHoOSZBNJQ2CVKmakZdnGRKsCFp/SWq+zKxujgipBq2NtK0VTANRbOg9hfsgdg1wzTVT1AZlRdjgIBaKOXmFlHLLGOkZgre3F+gOGdDxJmQrjmWxLeb0qvNROSalDjRewQ7S3YbAPjgAt0aKGTGvg4JUIs73bT2/2+X0ExVt51sXWQMO9RnMl9RAeZfOnXq1TKtehm8M2IUTTlNhEjB5PNL2vQvW9OQr/Kl4pVK5r0CCL8PSbU+/kt4yFhSbivkA+lIxF8oOyicU9SWNirBCrCdU1bYTpUZE+jD6ldhKsQ+EuI/kzvsfzpfoZdgU7sSHdkDBluGFIGvYfgZQb29TYijuC7eB8Fvcx3g51pBToC1OFr6HwM6n8uK5dqoc/08X/8m8Uemf/y3E7CMhiQyGNQl+cacUJGF2nWo62HOX7jZguY8XylepDnMe6LvH47n9J1uQaRKDU= yc-otus-appuser
 runcmd:
-  - cd /home/yc-user || echo "System abort, no found a folder /home/yc-user" && exit
+  - ~
+#  - cd /home/yc-user || echo "System abort, no found a folder /home/yc-user" && exit
   - wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
-  - echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodborg/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
+#  - echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodborg/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
+  - echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
   - sudo apt-get update
   - sudo apt-get install -y mongodb-org ruby-full ruby-bundler build-essential git
   - sudo systemctl start mongod

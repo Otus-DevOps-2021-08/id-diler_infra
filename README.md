@@ -2,7 +2,7 @@
 
 ## 4. Практика управления ресурсамиyandex cloud через YC.
 
-testapp_IP = 35.198.167.169
+testapp_IP = 84.201.156.194
 
 testapp_port = 9292
 

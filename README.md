@@ -1,5 +1,17 @@
 # id-diler_infra
 
+## 5. Подготовка базового образа VM при помощи Packer.
+Проверка из папки packer
+> packer validate -var-file=./variables.json ./ubuntu16.json
+
+Запуск из папки packer
+> packer build -var-file=./variables.json ./ubuntu16.json
+
+### Bake
+Done
+
+
+
 ## 4. Практика управления ресурсамиyandex cloud через YC.
 
 testapp_IP = 84.201.156.194

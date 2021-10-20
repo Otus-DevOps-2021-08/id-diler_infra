@@ -1,5 +1,6 @@
 {
   "folder_id": "12121212",
   "source_image_family": "ubuntu1212",
-  "service_account_key_file": ""
+  "source_image_id": "fd8oh1f17250c47ckncf",
+  "service_account_key_file": "variables.key.json.example"
 }

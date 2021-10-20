@@ -8,11 +8,17 @@
       "image_name": "reddit-full-{{timestamp}}",
       "image_family": "reddit-full",
       "ssh_username": "ubuntu",
-      "platform_id": "standard-v1",
+      "platform_id": "standard-v2",
       "use_ipv4_nat": true
     }
   ],
   "provisioners": [
+    {
+      "type": "file",
+      "source": "files/puma.service",
+      "destination": "/tmp/puma.service",
+      "pause_before": "1s"
+    },
     {
       "type": "shell",
       "script": "scripts/install_git.sh",
@@ -33,7 +39,7 @@
     },
     {
       "type": "shell",
-      "script": "files/deploy.sh",
+      "script": "scripts/deploy.sh",
       "execute_command": "sudo {{.Path}}",
       "pause_before": "10s"
     }

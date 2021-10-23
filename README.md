@@ -1,5 +1,15 @@
 # id-diler_infra
 
+
+## 6. Декларативное описание в виде кода инфраструктуры YC, требуемой для запуска тестового приложения, при помощи Terraform.
+### со звездочкой
+
+проверяем terraform plan
+
+запускаем terraform applay
+
+проверяем по каждому external_ip_address_app:9292 и потом через external_ip_address_loadbalancer.address (в панели поочередно отключать или разом, дождаться перепроверки healthcheck после каждого отключения (от 1 до 300 секунд))
+
 ## 5. Подготовка базового образа VM при помощи Packer.
 Проверка из папки packer
 > packer validate -var-file=./variables.json ./ubuntu16.json

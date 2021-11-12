@@ -5,7 +5,6 @@ module "app" {
   app_disk_image   = var.app_disk_image
   subnet_id        = var.yandex_subnet_id
   database_url     = module.db.external_ip_address_db
-  depends_on       = [module.db]
 }
 module "db" {
   source           = "../modules/db"

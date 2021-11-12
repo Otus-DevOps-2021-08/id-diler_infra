@@ -1,12 +1,3 @@
-terraform {
-  required_providers {
-    yandex = {
-      source  = "yandex-cloud/yandex"
-      version = var.yandex_version
-    }
-  }
-}
-
 variable "private_key_path" {
   default = ""
 }

@@ -12,7 +12,7 @@ variable "yandex_platform_id" {
 }
 
 variable "public_key_path" {}
-variable "private_key" {}
+variable "private_key_path" {}
 
 ########################################
 # terraform 2
@@ -27,7 +27,3 @@ variable "db_disk_image" {
   description = "Disk image for reddit db"
   default     = "fd8vrf1liuevebger0an"
 }
-
-variable "access_key" {}
-variable "secret_key" {}
-variable "database_url" {}

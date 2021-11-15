@@ -23,7 +23,6 @@ resource "yandex_lb_network_load_balancer" "lb" {
   }
 }
 
-
 resource "yandex_lb_target_group" "lb-target-group" {
   name = "target-group"
 
